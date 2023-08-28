@@ -1,0 +1,31 @@
+<div class="registration-container">
+    <h1>Registration</h1>
+    <form (ngSubmit)="register()">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" [(ngModel)]="phoneNumber" required>
+      </div>
+      <div class="form-group">
+        <label for="county">County:</label>
+        <input type="text" id="county" name="county" [(ngModel)]="county" required>
+      </div>
+      <div class="form-group">
+        <label for="subscriptionType">Subscription Type:</label>
+        <select id="subscriptionType" name="subscriptionType" [(ngModel)]="subscriptionType" required>
+          <option value="Free User">Free User</option>
+          <option value="Classic User">Classic User</option>
+          <option value="Premium User">Premium User</option>
+        </select>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  
