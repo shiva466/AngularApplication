@@ -1,1 +1,15 @@
-<p>home works!</p>
+<div>
+    <button (click)="sortCarWidgets()">Sort Car Widgets</button>
+    <select (change)="filterByBrand($event)">
+      <option value="">All Brands</option>
+      <option value="Toyota">Toyota</option>
+      <option value="Honda">Honda</option>
+      <!-- Add other brand options as needed -->
+    </select>
+</div>
+<div class="row">
+    <div class="col" *ngFor="let item of filteredCarWidgets.length > 0 ? filteredCarWidgets : loopArray; let i = index">
+      <app-car-widget></app-car-widget>
+    </div>
+</div>
+  

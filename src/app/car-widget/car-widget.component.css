@@ -1,0 +1,67 @@
+/* car-widget.component.css */
+
+.car-widget {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
+  }
+  
+  .car-image {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .car-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .car-details {
+    flex: 2;
+  }
+  
+  .car-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .brand-name,
+  .manufacture-year,
+  .miles-drove,
+  .subscription-type,
+  .dealer-name {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .dealer-name {
+    color: #888;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 10px;
+  }
+  
+  button {
+    flex: 1;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

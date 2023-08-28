@@ -1,0 +1,13 @@
+/* Adjust the width and other styles as needed */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+  }
+  
+.col {
+  width: calc(33.33% - 10px); /* Adjust the width and margins as needed */
+  margin-bottom: 20px;
+  padding: 5px;
+}
+  

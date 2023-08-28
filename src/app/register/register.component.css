@@ -1,27 +1,38 @@
 /* registration.component.css */
 
 .registration-container {
-    width: 100%;
-    margin: auto;
+  display: flex;
+    width: 40%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #c68a8a;
     border-radius: 5px;
-    background-color: #f7f7f7;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #b8ccb3;
   }
   
   h1 {
     text-align: center;
   }
-  
+  .form-level{
+    width: 80%;
+  }
+
   .form-group {
     margin-bottom: 15px;
+    display: flex;
+    width: 100%;
   }
   
   label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    margin-right: 10px;
   }
   
   input[type="text"],

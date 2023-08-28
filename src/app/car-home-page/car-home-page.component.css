@@ -1,0 +1,34 @@
+.car-details-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .image-container {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    align-items: center;
+    max-height: 200px;
+  }
+  
+  .details {
+    flex: 2;
+    padding-left: 20px;
+  }
+  
+  .detail-item {
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .value {
+    margin-left: 10px;
+  }
+  

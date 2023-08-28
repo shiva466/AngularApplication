@@ -2,6 +2,7 @@
 
 .login-container {
     display: flex;
+    width: 40%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -12,9 +13,6 @@
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #b8ccb3;
-    background-image: 
-      url('C:/Users/chama/Desktop/Angular/first-app/src/assets/audi-logo.png'),
-      url('C:/Users/chama/Desktop/Angular/first-app/src/assets/bmw-logo.png');
     background-repeat: no-repeat, no-repeat;
     background-position: left center, right center;
     background-size: auto 100%, auto 100%;
@@ -25,6 +23,9 @@
     text-align: center;
     margin-bottom: 20px;
     color: #007bff;
+  }
+  form {
+    align-items: left;
   }
   .form-group {
     margin-bottom: 20px;
