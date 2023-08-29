@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { SharedService } from '../shared-service.service';
 
 @Component({
   selector: 'app-car-widget',
@@ -7,16 +9,16 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CarWidgetComponent implements OnInit {
   @Input() carData: any;
-  carImageSrc: string = '../../assets/audi-logo.png';
-  carName: string = 'Car Model';
-  brandName: string = 'Car Brand';
-  manufactureYear: number = 2023;
-  milesDrove: number = 15000;
+  carImageSrc: string = "";
   subscriptionType: string = 'Premium User';
-  dealerName: string = 'ABC Auto Sales';
+  constructor(private router: Router, private sharedService: SharedService) {}
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.carImageSrc = '../../assets/'+this.carData.id+'.jpeg';
   }
   
+  viewDetails(){
+    this.sharedService.setData(this.carData);
+    this.router.navigate(['/car', this.carData.id]);
+  }
 }

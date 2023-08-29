@@ -3,24 +3,36 @@
     <img [src]="carImageSrc" alt="Car Image">
   </div>
   <div class="car-details">
-    <h2 class="car-name">{{ carName }}</h2>
+    <h2 class="car-name">{{ carData.brand }}</h2>
     <p class="brand-name">
-      <span class="label">Brand: </span><span class="value">{{ brandName }}</span>
+      <span class="label">Brand: </span><span class="value">{{ carData.model }}</span>
     </p>
     <p class="manufacture-year">
-      <span class="label">Manufacture Year: </span><span class="value">{{ manufactureYear }}</span>
+      <span class="label">Manufacture Year: </span><span class="value">{{ carData.year }}</span>
     </p>
     <p class="miles-drove">
-      <span class="label">Miles Drove: </span><span class="value">{{ milesDrove }}</span>
+      <span class="label">Miles Drove: </span><span class="value">{{ carData.mileage }}</span>
+    </p>
+    <p class="miles-drove">
+      <span class="label">Registration: </span><span class="value">{{ carData.registration }}</span>
+    </p>
+    <p class="miles-drove">
+      <span class="label">Car Color: </span><span class="value">{{ carData.colour }}</span>
+    </p>
+    <p class="miles-drove">
+      <span class="label">Fuel Type: </span><span class="value">{{ carData.fuel }}</span>
+    </p>
+    <p class="miles-drove">
+      <span class="label">Engine Capacity: </span><span class="value">{{ carData.enginecapacity }}</span>
     </p>
     <p class="subscription-type">
       <span class="label">Subscription Type: </span><span class="value">{{ subscriptionType }}</span>
     </p>
     <p class="dealer-name">
-      <span class="label">Dealer: </span><span class="value">{{ dealerName }}</span>
+      <span class="label">Dealer: </span><span class="value">{{ carData.dealer.dealerName }}</span>
     </p>
     <p class="button-container">
-      <button type="submit">View Details</button>
+      <button type="submit" (click)="viewDetails()">View Details</button>
     </p>
   </div>
 </div>

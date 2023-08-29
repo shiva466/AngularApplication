@@ -1,54 +1,178 @@
 [
     {
-        "id": 6,
-        "brand": "Mercedes-Benz",
-        "model": "C-Class",
-        "year": "2021",
-        "fuel": "Petrol",
-        "registration": "212W1234",
-        "enginecapacity": "2.0",
-        "colour": "Silver",
-        "transmission": "Automatic",
-        "dealer": {
-        "price": "19500",
-        "mileage": "38979 kms",
-        "id": 6,
-        "dealerName": "athlone garage",
-        "phoneNumber": "0892234567",
-        "benefits": "25% discount on accesories"
-        },
-        "nct": {
-        "nctvalidity": "2024-01-15",
-        "iscarstolen": "Yes",
+      "id": 1,
+      "brand": "Skoda",
+      "model": "Octavia",
+      "year": "2008",
+      "fuel": "Petrol",
+      "registration": "182W1234",
+      "enginecapacity": "1600",
+      "colour": "Silver",
+      "transmission": "Automatic",
+      "dealer": {
+        "price": "5700",
+        "mileage": "123659 kms",
+        "id": 1,
+        "dealerName": "motor garage",
+        "phoneNumber": "0892134567",
+        "benefits": "Free Serice"
+      },
+      "nct": {
+        "nctvalidity": "2023-12-31",
+        "iscarstolen": "No",
         "iscarwrittenoff": "No",
-        "historycheck": "Issues",
-        "nctrating": "C",
-        "mechanicaldefects": "Yes",
+        "historycheck": "Clean",
+        "nctrating": "A",
+        "mechanicaldefects": "No",
         "externaldefects": "No",
-        "repaircost": "180",
-        "id": 6
-        },
-        "totalcost": null
+        "repaircost": "0",
+        "id": 1
+      },
+      "totalcost": null
     },
     {
-        "id": 1,
-        "brand": "Mercedes-Benz",
-        "model": "C-Class",
-        "year": "2021",
-        "fuel": "Petrol",
-        "registration": "212W1234",
-        "enginecapacity": "2.0",
-        "colour": "Silver",
-        "transmission": "Manual",
-        "dealer": {
+      "id": 2,
+      "brand": "Volkswagen",
+      "model": "Golf",
+      "year": "2019",
+      "fuel": "Diesel",
+      "registration": "192W1234",
+      "enginecapacity": "2000",
+      "colour": "Black",
+      "transmission": "Manual",
+      "dealer": {
+        "price": "8200",
+        "mileage": "87000kms",
+        "id": 2,
+        "dealerName": "motor garage",
+        "phoneNumber": "0892134567",
+        "benefits": "Free Serice"
+      },
+      "nct": {
+        "nctvalidity": "2023-11-30",
+        "iscarstolen": "Yes",
+        "iscarwrittenoff": "No",
+        "historycheck": "Issues",
+        "nctrating": "C",
+        "mechanicaldefects": "Yes",
+        "externaldefects": "No",
+        "repaircost": "200",
+        "id": 2
+      },
+      "totalcost": null
+    },
+    {
+      "id": 3,
+      "brand": "Hyundai",
+      "model": "Elantra",
+      "year": "2020",
+      "fuel": "Petrol",
+      "registration": "202W1234",
+      "enginecapacity": "1800",
+      "colour": "Red",
+      "transmission": "Automatic",
+      "dealer": {
+        "price": "2700",
+        "mileage": "341659 kms",
+        "id": 3,
+        "dealerName": "auto sports",
+        "phoneNumber": "0892134567",
+        "benefits": "Free NCT "
+      },
+      "nct": {
+        "nctvalidity": "2023-09-15",
+        "iscarstolen": "No",
+        "iscarwrittenoff": "Yes",
+        "historycheck": "Clean",
+        "nctrating": "B",
+        "mechanicaldefects": "No",
+        "externaldefects": "Yes",
+        "repaircost": "1500",
+        "id": 3
+      },
+      "totalcost": null
+    },
+    {
+      "id": 4,
+      "brand": "Audi",
+      "model": "A4",
+      "year": "2017",
+      "fuel": "Petrol",
+      "registration": "172W1234",
+      "enginecapacity": "2000",
+      "colour": "Blue",
+      "transmission": "Automatic",
+      "dealer": {
+        "price": "12300",
+        "mileage": "12659 kms",
+        "id": 4,
+        "dealerName": "motor town",
+        "phoneNumber": "0892134527",
+        "benefits": "Free Oil"
+      },
+      "nct": {
+        "nctvalidity": "2024-02-28",
+        "iscarstolen": "Yes",
+        "iscarwrittenoff": "Yes",
+        "historycheck": "Issues",
+        "nctrating": "D",
+        "mechanicaldefects": "Yes",
+        "externaldefects": "Yes",
+        "repaircost": "3000",
+        "id": 4
+      },
+      "totalcost": null
+    },
+    {
+      "id": 5,
+      "brand": "BMW",
+      "model": "3 Series",
+      "year": "2019",
+      "fuel": "Diesel",
+      "registration": "192W1234",
+      "enginecapacity": "2500",
+      "colour": "White",
+      "transmission": "Automatic",
+      "dealer": {
+        "price": "13425",
+        "mileage": "198392 kms",
+        "id": 5,
+        "dealerName": "shi sports",
+        "phoneNumber": "0892133567",
+        "benefits": "3 free services"
+      },
+      "nct": {
+        "nctvalidity": "2023-10-20",
+        "iscarstolen": "No",
+        "iscarwrittenoff": "No",
+        "historycheck": "Clean",
+        "nctrating": "A",
+        "mechanicaldefects": "No",
+        "externaldefects": "No",
+        "repaircost": "0",
+        "id": 5
+      },
+      "totalcost": null
+    },
+    {
+      "id": 6,
+      "brand": "Mercedes-Benz",
+      "model": "C-Class",
+      "year": "2021",
+      "fuel": "Petrol",
+      "registration": "212W1234",
+      "enginecapacity": "2.0",
+      "colour": "Silver",
+      "transmission": "Automatic",
+      "dealer": {
         "price": "19500",
         "mileage": "38979 kms",
         "id": 6,
         "dealerName": "athlone garage",
         "phoneNumber": "0892234567",
         "benefits": "25% discount on accesories"
-        },
-        "nct": {
+      },
+      "nct": {
         "nctvalidity": "2024-01-15",
         "iscarstolen": "Yes",
         "iscarwrittenoff": "No",
@@ -58,7 +182,7 @@
         "externaldefects": "No",
         "repaircost": "180",
         "id": 6
-        },
-        "totalcost": null
+      },
+      "totalcost": null
     }
-]
+  ]

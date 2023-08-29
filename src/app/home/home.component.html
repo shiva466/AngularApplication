@@ -8,8 +8,8 @@
     </select>
 </div>
 <div class="row">
-    <div class="col" *ngFor="let item of loopArray; let i = index">
-      <app-car-widget [carData] = "item"></app-car-widget>
+    <div class="col" *ngFor="let carData of carArray">
+      <app-car-widget [carData] = "carData"></app-car-widget>
     </div>
 </div>
   

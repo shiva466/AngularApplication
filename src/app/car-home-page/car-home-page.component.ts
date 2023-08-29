@@ -1,19 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { SharedService } from '../shared-service.service';
 
 @Component({
   selector: 'app-car-home-page',
   templateUrl: './car-home-page.component.html',
   styleUrls: ['./car-home-page.component.css']
 })
-export class CarHomePageComponent {
+export class CarHomePageComponent implements OnInit {
   carImageSrc: string = '../../assets/bmw-logo.png';
-  carName = "Car Brand";
-  carModel = "Car Model";
-  manufacturingYear = "2023";
-  transmissionType = "Automatic";
-  fuelType = "Petrol";
-  engineCapacity = "2.0L";
-  color = "Blue";
-  dealers = "Car Dealer A, Car Dealer B";
-  nct = "2023-12-31";
+  carData: any;
+
+  constructor(private sharedService: SharedService) {}
+
+  ngOnInit(): void {
+   debugger;
+   this.sharedService.getData().subscribe(data => {
+    this.carData = data; 
+  });
+   this.carImageSrc = '../../assets/'+this.carData.id+'.jpeg';
+  }
 }

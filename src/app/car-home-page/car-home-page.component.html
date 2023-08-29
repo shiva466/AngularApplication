@@ -1,5 +1,5 @@
 <div class="car-details-container">
-    <div class="car-image">
+    <div class="image-container">
         <img [src]="carImageSrc" alt="Car Image">
       </div>
 </div>
@@ -7,39 +7,39 @@
     <div class="details">
       <div class="detail-item">
         <span class="label">Car Name:</span>
-        <span class="value">{{ carName }}</span>
+        <span class="value">{{ carData.brand }}</span>
       </div>
       <div class="detail-item">
         <span class="label">Car Model:</span>
-        <span class="value">{{ carModel }}</span>
+        <span class="value">{{ carData.model }}</span>
       </div>
       <div class="detail-item">
         <span class="label">Manufacturing Year:</span>
-        <span class="value">{{ manufacturingYear }}</span>
+        <span class="value">{{ carData.year }}</span>
       </div>
       <div class="detail-item">
         <span class="label">Transmission Type:</span>
-        <span class="value">{{ transmissionType }}</span>
+        <span class="value">{{ carData.transmission }}</span>
       </div>
       <div class="detail-item">
         <span class="label">Fuel Type:</span>
-        <span class="value">{{ fuelType }}</span>
+        <span class="value">{{ carData.fuel }}</span>
       </div>
       <div class="detail-item">
         <span class="label">Engine Capacity:</span>
-        <span class="value">{{ engineCapacity }}</span>
+        <span class="value">{{ carData.enginecapacity }}</span>
       </div>
       <div class="detail-item">
         <span class="label">Color:</span>
-        <span class="value">{{ color }}</span>
+        <span class="value">{{ carData.color }}</span>
       </div>
       <div class="detail-item">
         <span class="label">Dealers:</span>
-        <span class="value">{{ dealers }}</span>
+        <span class="value">{{ carData.dealer.dealerName }}</span>
       </div>
       <div class="detail-item">
         <span class="label">NCT:</span>
-        <span class="value">{{ nct }}</span>
+        <span class="value">{{ carData.nct.nctvalidity }}</span>
       </div>
     </div>
   </div>

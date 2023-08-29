@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router'; 
 
 @Component({
   selector: 'app-login',
@@ -9,14 +10,9 @@ export class LoginComponent {
   username: string = '';
   password: string = '';
 
+  constructor(private router: Router) {}
+
   login() {
-    // Perform your login logic here
-    if (this.username === 'user' && this.password === 'password') {
-      console.log('Login successful');
-      // Redirect to another page or perform further actions
-    } else {
-      console.log('Login failed');
-      // Show an error message or take other actions
-    }
-  }
+    this.router.navigate(['/homePage']);
+  } 
 }
