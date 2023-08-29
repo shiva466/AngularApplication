@@ -1,23 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import * as carsData from '../../assets/cars.json';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
 
   loopCount: number = 6;
-  loopArray: any[] = [
-    { carName: 'Car A', manufactureYear: 2020, /* ...other properties */ },
-    { carName: 'Car B', manufactureYear: 2022, /* ...other properties */ },
-    { carName: 'Car C', manufactureYear: 2019, /* ...other properties */ },
-    { carName: 'Car D', manufactureYear: 2019, /* ...other properties */ },
-    { carName: 'Car E', manufactureYear: 2019, /* ...other properties */ },
-    // ... other car objects
-  ];
+  loopArray: any[] = carsData;
   filteredCarWidgets: any[] = [];
-
+  
+  ngOnInit() {
+    debugger;
+    this.loopArray;
+    // Initialize your component, if needed
+  }
   filterByBrand(event: Event) {
     const brandName = (event.target as HTMLSelectElement).value;
     if (brandName === "") {

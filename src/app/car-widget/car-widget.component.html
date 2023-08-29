@@ -1,17 +1,27 @@
 <div class="car-widget">
-    <div class="car-image">
-      <img [src]="carImageSrc" alt="Car Image">
-    </div>
-    <div class="car-details">
-      <h2 class="car-name">{{ carName }}</h2>
-      <p class="brand-name">Brand: {{ brandName }}</p>
-      <p class="manufacture-year">Manufacture Year: {{ manufactureYear }}</p>
-      <p class="miles-drove">Miles Drove: {{ milesDrove }}</p>
-      <p class="subscription-type">Subscription Type: {{ subscriptionType }}</p>
-      <p class="dealer-name">Dealer: {{ dealerName }}</p>
-      <p class="button-container">
-        <button type="submit">View Details</button>
-      </p>
-    </div>
+  <div class="car-image">
+    <img [src]="carImageSrc" alt="Car Image">
   </div>
+  <div class="car-details">
+    <h2 class="car-name">{{ carName }}</h2>
+    <p class="brand-name">
+      <span class="label">Brand: </span><span class="value">{{ brandName }}</span>
+    </p>
+    <p class="manufacture-year">
+      <span class="label">Manufacture Year: </span><span class="value">{{ manufactureYear }}</span>
+    </p>
+    <p class="miles-drove">
+      <span class="label">Miles Drove: </span><span class="value">{{ milesDrove }}</span>
+    </p>
+    <p class="subscription-type">
+      <span class="label">Subscription Type: </span><span class="value">{{ subscriptionType }}</span>
+    </p>
+    <p class="dealer-name">
+      <span class="label">Dealer: </span><span class="value">{{ dealerName }}</span>
+    </p>
+    <p class="button-container">
+      <button type="submit">View Details</button>
+    </p>
+  </div>
+</div>
   
