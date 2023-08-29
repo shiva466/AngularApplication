@@ -1,46 +1,104 @@
 <div class="car-details-container">
+  <div>
     <div class="image-container">
-        <img [src]="carImageSrc" alt="Car Image">
-      </div>
-</div>
-<div class="car-details-container">
-    <div class="details">
-      <div class="detail-item">
-        <span class="label">Car Name:</span>
-        <span class="value">{{ carData.brand }}</span>
-      </div>
-      <div class="detail-item">
-        <span class="label">Car Model:</span>
-        <span class="value">{{ carData.model }}</span>
-      </div>
-      <div class="detail-item">
-        <span class="label">Manufacturing Year:</span>
-        <span class="value">{{ carData.year }}</span>
-      </div>
-      <div class="detail-item">
-        <span class="label">Transmission Type:</span>
-        <span class="value">{{ carData.transmission }}</span>
-      </div>
-      <div class="detail-item">
-        <span class="label">Fuel Type:</span>
-        <span class="value">{{ carData.fuel }}</span>
-      </div>
-      <div class="detail-item">
-        <span class="label">Engine Capacity:</span>
-        <span class="value">{{ carData.enginecapacity }}</span>
-      </div>
-      <div class="detail-item">
-        <span class="label">Color:</span>
-        <span class="value">{{ carData.color }}</span>
-      </div>
-      <div class="detail-item">
-        <span class="label">Dealers:</span>
-        <span class="value">{{ carData.dealer.dealerName }}</span>
-      </div>
-      <div class="detail-item">
-        <span class="label">NCT:</span>
-        <span class="value">{{ carData.nct.nctvalidity }}</span>
-      </div>
+      <img [src]="carImageSrc" alt="Car Image">
     </div>
   </div>
   
+  <div>
+    <div class="details">
+      <div class="detail-column">
+        <div class="detail-item detail-top-border">
+          <span class="label">Car Name:</span>
+          <span class="value">{{ carData.brand }}</span>
+        </div>
+        <div class="detail-item">
+          <span class="label">Car Model:</span>
+          <span class="value">{{ carData.model }}</span>
+        </div>
+        <div class="detail-item">
+          <span class="label">Manufacturing Year:</span>
+          <span class="value">{{ carData.year }}</span>
+        </div>
+        <div class="detail-item">
+          <span class="label">Transmission Type:</span>
+          <span class="value">{{ carData.transmission }}</span>
+        </div>
+        <div class="detail-item">
+          <span class="label">Fuel Type:</span>
+          <span class="value">{{ carData.fuel }}</span>
+        </div>
+        <div class="detail-item">
+          <span class="label">Engine Capacity:</span>
+          <span class="value">{{ carData.enginecapacity }}</span>
+        </div>
+        <div class="detail-item">
+          <span class="label">Color:</span>
+          <span class="value">{{ carData.color }}</span>
+        </div>
+      </div>
+      <div class="detail-column">
+        <div class="detail-item ">
+          <span class="label">Dealers:</span>
+          <span class="value">{{ carData.dealer.dealerName }}</span>
+        </div>
+        <div class="detail-item ">
+          <span class="label">Milage:</span>
+          <span class="value">{{ carData.dealer.mileage }}</span>
+        </div>
+        <div class="detail-item ">
+          <span class="label">Dealer Name:</span>
+          <span class="value">{{ carData.dealer.dealerName }}</span>
+        </div>
+        <div class="detail-item ">
+          <span class="label">Dealer Phone Number:</span>
+          <span class="value">{{ carData.dealer.phoneNumber }}</span>
+        </div>
+        <div class="detail-item ">
+          <span class="label">Dealer Benifits:</span>
+          <span class="value">{{ carData.dealer.benefits }}</span>
+        </div>
+      </div>
+      <div class="detail-column">
+        <div class="detail-item ">
+          <span class="label">NCT:</span>
+          <span class="value">{{ carData.nct.nctvalidity }}</span>
+        </div>
+        <div class="detail-item ">
+          <span class="label">Stolen Car:</span>
+          <span class="value">{{ carData.nct.iscarstolen }}</span>
+        </div>
+        <div class="detail-item ">
+          <span class="label">Written Off:</span>
+          <span class="value">{{ carData.nct.iscarwrittenoff }}</span>
+        </div>
+        <div class="detail-item ">
+          <span class="label">History Check:</span>
+          <span class="value">{{ carData.nct.historycheck}}</span>
+        </div>
+        <div class="detail-item ">
+          <span class="label">NCT Valdity:</span>
+          <span class="value">{{ carData.nct.nctvalidity }}</span>
+        </div>
+        <div class="detail-item ">
+          <span class="label">NCT Rating:</span>
+          <span class="value">{{ carData.nct.nctrating }}</span>
+        </div>
+        <div class="detail-item ">
+          <span class="label">Mechanical Defects:</span>
+          <span class="value">{{ carData.nct.mechanicaldefects }}</span>
+        </div>
+        <div class="detail-item">
+          <span class="label">External Defects:</span>
+          <span class="value">{{ carData.nct.externaldefects }}</span>
+        </div>
+
+        <div class="detail-item">
+          <span class="label">Dealers:</span>
+          <span class="value">{{ carData.nct.repaircost }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
