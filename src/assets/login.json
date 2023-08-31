@@ -1,0 +1,21 @@
+[
+    {
+        "userName" : "tchalla",
+        "password": "test",
+        "subscription": "Free User"
+},
+{
+        "userName" : "stark",
+        "password": "test",
+        "subscription": "Free User"
+},
+{
+        "userName" : "hulk",
+        "password": "test",
+        "subscription": "Free User"
+},
+{
+        "userName" : "rocket",
+        "password": "test",
+        "subscription": "Free User"
+}]

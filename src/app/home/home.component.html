@@ -2,13 +2,17 @@
     <button (click)="sortCarWidgets()">Sort Car Widgets</button>
     <select (change)="filterByBrand($event)">
       <option value="">All Brands</option>
-      <option value="Toyota">Toyota</option>
-      <option value="Honda">Honda</option>
+      <option value="Skoda">Skoda</option>
+      <option value="Volkswagen">Volkswagen</option>
+      <option value="Hyundai">Hyundai</option>
+      <option value="Audi">Audi</option>
+      <option value="BMW">BMW</option>
+      <option value="Mercedes-Benz">Mercedes-Benz</option>
       <!-- Add other brand options as needed -->
     </select>
 </div>
 <div class="row">
-    <div class="col" *ngFor="let carData of carArray">
+    <div class="col" *ngFor="let carData of filteredCarWidgets.length == 0 ? carArray : filteredCarWidgets">
       <app-car-widget [carData] = "carData"></app-car-widget>
     </div>
 </div>
