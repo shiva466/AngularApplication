@@ -1,6 +1,6 @@
 <div class="login-container">
   <h1>Irish Used Car Sales</h1>
-  <form (ngSubmit)="login()">
+  <form>
     <div class="form-group">
       <label for="username">Username:</label>
       <input type="text" id="username" name="username" [(ngModel)]="username" required>
@@ -10,7 +10,8 @@
       <input type="password" id="password" name="password" [(ngModel)]="password" required>
     </div>
     <div class="button-container">
-      <button type="submit">Login</button>
+      <button type="submit" (click)="login()">Login</button>
+      <button type="submit" (click)="register()">Register</button>
     </div>
   </form>
 </div>

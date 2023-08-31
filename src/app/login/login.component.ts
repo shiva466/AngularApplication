@@ -26,7 +26,9 @@ export class LoginComponent {
       alert('Invalid username or password');
       // Display an error message or handle unsuccessful login
     }
-    
+  }
 
+  register(){
+    this.router.navigate(['/registration']);
   }
 }
